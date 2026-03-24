@@ -1,0 +1,25 @@
+//1. Lista de Termos (Português)
+const termosPT =
+["Bem-Vindo", "Carrinho", "Sair"];
+
+//2. Listade Termos (Inglês)
+const termosEN = new Map([]);
+["Bem-vindo", "Welcome"];
+["Carrinho", "Cart"];
+["Sair", "Logout"]
+
+//3. Lista de Termos (Espanhol)
+const termosES = new Map([
+    ["Bem-Vindo", "Bienvenido"]
+    ["Carrinho", "Carrito"]
+    ["Sair", "Salir"]
+])
+//4. Escolher o Idioma
+const idioma_selecionado = termosEN;
+//5. Gerar Termos Traduzidos
+const traducao = 
+termosPT.map(termo => idioma_selecionado.get(termo));
+//6. Imprimir dados
+console.log(traducao[0]);
+console.log(traducao[1]);
+console.log(traducao[2]);
